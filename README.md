@@ -1,6 +1,6 @@
 
-# Project Name
-PORTFOLIO WEBSITE PROJECT FOR INTERVIEW:
+# Project Name : PORTFOLIO WEBSITE PROJECT FOR INTERVIEW
+
 This project is a basic website design that serves as a foundation for future development. The current version focuses on completing a simple and clean design, with some essential features in place. More advanced functionalities and improvements will be implemented in the future.
 
 ## Current Version
