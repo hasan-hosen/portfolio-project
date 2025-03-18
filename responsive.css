@@ -2,24 +2,27 @@
 #container{
     padding:0 10%;
 }
-
-
-
-
 /* ------------------ default css ends here  --------------  */
-
  /* ----------------------- main css starts from here  -------------------  */
- /* for mobile only  */
+
+ /* -------- for mobile only -------  */
  @media (max-width: 480px) {
     .section-title{
         font-size:30px;
     }
     /* ---------- header section --------  */
     .header-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
     }
     .header-row .head-left{
         width:100%;
@@ -27,7 +30,8 @@
         margin:auto;
     }
     .header-row .head-right{
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         padding:20px 0;
         border-top:1px solid rgba(53, 53, 53, 1);
     }
@@ -41,8 +45,6 @@
         display:block;
     }
     .head-right h3 i{
-        background: linear-gradient(rgba(245, 189, 77, 1),rgba(248, 146, 34, 1));
-        color:#fff;
         font-size:12px;
         width:20px;
         height:20px;
@@ -54,51 +56,49 @@
         float:left;
     }
     .head-right a{
-        text-decoration:none;
         font-size:14px;
-        border:1px solid rgba(248, 146, 34, 1);
-        border-radius:50px;
         width:100px;
         padding:5px 0;
-        float:right;
     }
-
-           /* -------------- responsive contact section -----------  */
-        #contact{
-            padding:30px 0;
-        }
-        #contact .contact-row{
-            display:flex;
+    /* -------------- responsive contact section -----------  */
+    #contact{
+        padding:30px 0;
+    }
+    #contact .contact-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
             flex-wrap:wrap;
-        }
-        .contact-row .contact-col-left{
+    }
+    .contact-row .contact-col-left{
+        -ms-flex-preferred-size: 0;
             flex-basis: 0;
-        }
-        .contact-row .contact-col-right{
+    }
+    .contact-row .contact-col-right{
+        -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-        }
-        form #fname, #lname, #email, #phone{
-            width:100%;
-            margin-bottom:6px;
-        }
-        form div > label{
-            font-weight:400;
-            font-size:16px;
-        }
-        form #fname input, #lname input, #email input, #phone input, #message textarea, input[type=submit]{
-            height:44px;
-        }
-        form #message textarea{
-            height:100px;
-            margin-top:30px;
-            margin-bottom: 20px;
-        }
-        form input[type=submit]{
-            font-size:16px;
-        }
-
-
-
+    }
+    form #fname, #lname, #email, #phone{
+        width:100%;
+        margin-bottom:6px;
+    }
+    form div > label{
+        font-weight:400;
+        font-size:16px;
+    }
+    form #fname input, #lname input, #email input, #phone input, #message textarea, input[type=submit]{
+        height:44px;
+    }
+    form #message textarea{
+        height:100px;
+        margin-top:30px;
+        margin-bottom: 20px;
+    }
+    form input[type=submit]{
+        font-size:16px;
+    }
+    /* --------- max: 480px - break ponint ends --------  */
  }
 
 
@@ -132,209 +132,247 @@
         border-radius:50px;
         width:124px;
     }
-          /* -------------- responsive hero section -----------  */
-        .hero-row{
-            display:flex;
+    /* -------------- responsive hero section -----------  */
+    .hero-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        }
-        .hero-row .hero-left{
+    }
+    .hero-row .hero-left{
+        -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-        }
-        .hero-right{
+    }
+    .hero-right{
+        -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-        }
-        .hero-left .profile{
-            width: 100%;
-        }
-        .hero-left .profile img{
-            display:block;
-            width:60%;
-            margin:auto;
-        }
-        .profile .social-icon{
-            padding:5px 0 8px 0;
-        }
-        .hero-right .intro {
-            width: 100%;
-            margin: 30px auto 0;
-            text-align: center;
-        }
+    }
+    .hero-left .profile{
+        width: 100%;
+    }
+    .hero-left .profile img{
+        display:block;
+        width:60%;
+        margin:auto;
+    }
+    .profile .social-icon{
+        padding:5px 0 8px 0;
+    }
+    .hero-right .intro {
+        width: 100%;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+    .intro h2{
+        font-size: 27px;
+        line-height:130%;
+        margin:14px 0;
+    }
+    .intro p{
+        margin-bottom: 20px;
+    }
+    .down-btn a{
+        padding:14px 30px;
+        font-size:14px;
+        margin: auto;
+    }
+    /* --------------- pricing section ---------------  */
+    .pricing-row .pricing-col-left{
+        -ms-flex-preferred-size:0;
+            flex-basis:0;
+    }
+    .pricing-row .pricing-col-right{
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+    .price-card-container{
+        display:-ms-grid;
+        display:grid;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        grid-row-gap: 22px;
+    }
+        /* -------------- responsive resume section -----------  */
+        #resume{
+        padding:20px 0;
+    }
+    #resume .resume-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+    }
+    .resume-row .resume-col-left{
+        -ms-flex-preferred-size:0;
+            flex-basis:0;
+    }
+    .resume-row .resume-col-right{
+        -ms-flex-preferred-size:100%;
+            flex-basis:100%;
+    }
+        /* -------------- responsive skill section -----------  */
+    #skill{
+        padding:30px 0;
+    }
+    #skill .skill-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+    }
+    .skill-row .skill-col-left{
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    }
+    .skill-row .skill-col-right{
+        -ms-flex-preferred-size:100%;
+            flex-basis:100%;
+    }
+        /* -------------- responsive portfolio section -----------  */
+    #portfolio{
+        padding:30px 0;
+    }
+    .portfolio-col-right .portfolio-grid{
+        margin:0;
+    }
+    #portfolio .portfolio-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+    }
+    .portfolio-row .portfolio-col-left{
+        -ms-flex-preferred-size:0;
+            flex-basis:0;
+    }
+    .portfolio-row .portfolio-col-right{
+        -ms-flex-preferred-size:100%;
+            flex-basis:100%;
+    }
     
-        .intro h2{
-            font-size: 27px;
-            line-height:130%;
-            margin:14px 0;
-        }
-        .intro p{
-            margin-bottom: 20px;
-        }
-        .down-btn a{
-            padding:14px 30px;
-            font-size:14px;
-            margin: auto;
-        }
-
-        /* --------------- pricing section ---------------  */
-        .pricing-row .pricing-col-left{
-            flex-basis:0;
-        }
-        .pricing-row .pricing-col-right{
-            flex-basis: 100%;
-        }
-        .price-card-container{
-            display:grid;
-            grid-template-columns: auto;
-            grid-row-gap: 22px;
-        }
-
-         /* -------------- responsive resume section -----------  */
-         #resume{
-            padding:20px 0;
-        }
-        #resume .resume-row{
-            display:flex;
+    .port-menu ul li a{
+        font-size:14px;
+        font-weight: 300;
+    }
+    .portfolio-col-right .portfolio-grid {
+        -webkit-column-gap: 10px;
+           -moz-column-gap: 10px;
+                column-gap: 10px;
+        margin-top:20px;
+    }
+    .portfolio-overlay i{
+        width:22px;
+        height: 22px;
+        font-size:10px;
+        bottom: 77%;
+    }
+    .portfolio-overlay h4{
+        font-size:15px;
+        font-weight:500;
+        margin-bottom:10px;
+    }
+    .portfolio-overlay p{
+        font-size:11px;
+    }
+        /* -------------- responsive blog section -----------  */
+    #blog{
+        padding:30px 0;
+    }
+    #blog .blog-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
             flex-wrap:wrap;
-        }
-        .resume-row .resume-col-left{
+    }
+    .blog-row .blog-col-left{
+        -ms-flex-preferred-size:0;
             flex-basis:0;
-        }
-        .resume-row .resume-col-right{
+    }
+    .blog-row .blog-col-right{
+        -ms-flex-preferred-size:100%;
             flex-basis:100%;
-        }
-
-          /* -------------- responsive skill section -----------  */
-        #skill{
-            padding:30px 0;
-        }
-        #skill .skill-row{
-            display:flex;
+    }
+    .blog-col-right .blog-cards-container{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
             flex-wrap:wrap;
-        }
-        .skill-row .skill-col-left{
+    }
+    .blog-column .single-blog:last-child{
+        margin-bottom: 0;
+    }
+
+    /* -------------- responsive pricing section -----------  */
+    #pricing{
+        padding:30px 0;
+    }
+    #pricing .pricing-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+        margin:20px 0;
+    }
+    .pricing-row .pricing-col-left{
+        -ms-flex-preferred-size:0;
+            flex-basis:0;
+    }
+    .pricing-row .pricing-col-right{
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+
+    .price-card-container{
+        display:-ms-grid;
+        display:grid;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    }
+    .pricing-card h2.pack-price{
+        font-size:40px;
+    }
+
+        /* -------------- responsive contact section -----------  */
+    #contact{
+        padding:30px 0;
+    }
+    #contact .contact-row{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+    }
+    .contact-row .contact-col-left{
+        -ms-flex-preferred-size: 0;
             flex-basis: 0;
-        }
-        .skill-row .skill-col-right{
-            flex-basis:100%;
-        }
-
-           /* -------------- responsive portfolio section -----------  */
-        #portfolio{
-            padding:30px 0;
-        }
-        .portfolio-col-right .portfolio-grid{
-            margin:0;
-        }
-        #portfolio .portfolio-row{
-            display:flex;
-            flex-wrap:wrap;
-        }
-        .portfolio-row .portfolio-col-left{
-            flex-basis:0;
-        }
-        .portfolio-row .portfolio-col-right{
-            flex-basis:100%;
-        }
-        
-        .port-menu ul li a{
-            font-size:14px;
-            font-weight: 300;
-        }
-        .portfolio-col-right .portfolio-grid {
-            column-gap: 10px;
-            margin-top:20px;
-        }
-        .portfolio-overlay i{
-            width:22px;
-            height: 22px;
-            font-size:10px;
-            bottom: 77%;
-        }
-        .portfolio-overlay h4{
-            font-size:15px;
-            font-weight:500;
-            margin-bottom:10px;
-        }
-        .portfolio-overlay p{
-            font-size:11px;
-        }
-        
-
-           /* -------------- responsive blog section -----------  */
-        #blog{
-            padding:30px 0;
-        }
-        #blog .blog-row{
-            display:flex;
-            flex-wrap:wrap;
-        }
-        .blog-row .blog-col-left{
-            flex-basis:0;
-        }
-        .blog-row .blog-col-right{
-            flex-basis:100%;
-        }
-        .blog-col-right .blog-cards-container{
-            display:flex;
-            flex-wrap:wrap;
-        }
-        .blog-column .single-blog:last-child{
-            margin-bottom: 0;
-        }
-
-        /* -------------- responsive pricing section -----------  */
-        #pricing{
-            padding:30px 0;
-        }
-        #pricing .pricing-row{
-            display:flex;
-            flex-wrap:wrap;
-            margin:20px 0;
-        }
-        .pricing-row .pricing-col-left{
-            flex-basis:0;
-        }
-        .pricing-row .pricing-col-right{
+    }
+    .contact-row .contact-col-right{
+        -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-        }
-
-        .price-card-container{
-            display:grid;
-            grid-template-columns: auto;
-        }
-        .pricing-card h2.pack-price{
-            font-size:40px;
-        }
-
-           /* -------------- responsive contact section -----------  */
-        #contact{
-            padding:30px 0;
-        }
-        #contact .contact-row{
-            display:flex;
-            flex-wrap:wrap;
-        }
-        .contact-row .contact-col-left{
-            flex-basis: 0;
-        }
-        .contact-row .contact-col-right{
-            flex-basis: 100%;
-        }
-        form div > label{
-            font-weight:400;
-            font-size:16px;
-        }
-        form #fname input, #lname input, #email input, #phone input, #message textarea, input[type=submit]{
-            height:44px;
-        }
-        form #message textarea{
-            height:100px;
-            margin-top:30px;
-            margin-bottom: 20px;
-        }
-        form input[type=submit]{
-            font-size:16px;
-        }
-
+    }
+    form div > label{
+        font-weight:400;
+        font-size:16px;
+    }
+    form #fname input, #lname input, #email input, #phone input, #message textarea, input[type=submit]{
+        height:44px;
+    }
+    form #message textarea{
+        height:100px;
+        margin-top:30px;
+        margin-bottom: 20px;
+    }
+    form input[type=submit]{
+        font-size:16px;
+    }
     /* ---------- left fixed icon menu area ---------  */
     #left-icon-menu{
         width:8.5%;
@@ -344,12 +382,10 @@
         height: 20px;
         font-size: 14px;
     }
-
-        /* --------- author info & language right side----------  */
+    /* --------- author info & language right side----------  */
     #author-right{
         width: 8.5%;
     }
-
     #author-right p{
         font-size:12px;
     }
@@ -372,13 +408,17 @@
     }
     /* ---------- header section --------  */
     .header-row{
-        column-gap: 30px;
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
     }
     .header-row .head-left{
-        flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
     }
     .header-row .head-right{
-        flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
     }
     .head-left .logo{
         width:135px;
@@ -388,13 +428,17 @@
     }
     /* -------------- responsive hero section -----------  */
     .hero-row{
-        column-gap:30px;
+        -webkit-column-gap:30px;
+           -moz-column-gap:30px;
+                column-gap:30px;
     }
     .hero-row .hero-left{
-        flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
     }
     .hero-row .hero-right{
-        flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
     }
     .hero-left .profile{
         width: 100%;
@@ -416,87 +460,110 @@
     .down-btn a{
         padding:14px 30px;
         font-size:14px;
+    }/* -------------- responsive resume section -----------  */
+    #resume .resume-row{
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
     }
-/* -------------- responsive resume section -----------  */
-#resume .resume-row{
-    column-gap: 30px;
-}
-.resume-row .resume-col-left{
-    flex-basis:25%;
-}
-.resume-row .resume-col-right{
-    flex-basis:75%;
-}
-/* -------------- responsive skill section -----------  */
-#skill .skill-row{
-    column-gap: 30px;
-}
-.skill-row .skill-col-left{
-    flex-basis: 25%;
-}
-.skill-row .skill-col-right{
-    flex-basis:75%;
-}
-/* -------------- responsive portfolio section -----------  */
-#portfolio .portfolio-row{
-    column-gap: 30px;
-}
-.portfolio-row .portfolio-col-left{
-    flex-basis:25%;
-}
-.portfolio-row .portfolio-col-right{
-    flex-basis:75%;
-}
-/* -------------- responsive blog section -----------  */
-#blog .blog-row{
-    column-gap:30px;
-}
-.blog-row .blog-col-left{
-    flex-basis:25%;
-}
-.blog-row .blog-col-right{
-    flex-basis:75%;
-}
-.single-blog .blog-content .blog-title{
-    font-size:17px;
-}
-.single-blog .blog-content .post-author{
-    font-size:13px;
-}
-.post-author::after{
-    right: -140px;
-}
+    .resume-row .resume-col-left{
+        -ms-flex-preferred-size:25%;
+            flex-basis:25%;
+    }
+    .resume-row .resume-col-right{
+        -ms-flex-preferred-size:75%;
+            flex-basis:75%;
+    }
+    /* -------------- responsive skill section -----------  */
+    #skill .skill-row{
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+    }
+    .skill-row .skill-col-left{
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+    }
+    .skill-row .skill-col-right{
+        -ms-flex-preferred-size:75%;
+            flex-basis:75%;
+    }
+    /* -------------- responsive portfolio section -----------  */
+    #portfolio .portfolio-row{
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+    }
+    .portfolio-row .portfolio-col-left{
+        -ms-flex-preferred-size:25%;
+            flex-basis:25%;
+    }
+    .portfolio-row .portfolio-col-right{
+        -ms-flex-preferred-size:75%;
+            flex-basis:75%;
+    }
+    /* -------------- responsive blog section -----------  */
+    #blog .blog-row{
+        -webkit-column-gap:30px;
+           -moz-column-gap:30px;
+                column-gap:30px;
+    }
+    .blog-row .blog-col-left{
+        -ms-flex-preferred-size:25%;
+            flex-basis:25%;
+    }
+    .blog-row .blog-col-right{
+        -ms-flex-preferred-size:75%;
+            flex-basis:75%;
+    }
+    .single-blog .blog-content .blog-title{
+        font-size:17px;
+    }
+    .single-blog .blog-content .post-author{
+        font-size:13px;
+    }
+    .post-author::after{
+        right: -140px;
+    }
 
-/* -------------- responsive pricing section -----------  */
-#pricing .pricing-row{
-    column-gap: 30px;
-    margin: 0;
-}
-.pricing-row .pricing-col-left{
-    flex-basis:25%;
-}
-.pricing-row .pricing-col-right{
-    flex-basis: 75%;
-}
-.price-card-container{
-    display:grid;
-    grid-template-columns: repeat(2, minmax(220px , 1fr ));
-    grid-gap: 15px;;
-}
+    /* -------------- responsive pricing section -----------  */
+    #pricing .pricing-row{
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+        margin: 0;
+    }
+    .pricing-row .pricing-col-left{
+        -ms-flex-preferred-size:25%;
+            flex-basis:25%;
+    }
+    .pricing-row .pricing-col-right{
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
+    }
+    .price-card-container{
+        display:-ms-grid;
+        display:grid;
+        -ms-grid-columns: minmax(220px , 1fr ) 15px minmax(220px , 1fr );
+        grid-template-columns: repeat(2, minmax(220px , 1fr ));
+        grid-gap: 15px;;
+    }
 
-
-/* -------------- responsive contact section -----------  */
-#contact .contact-row{
-    column-gap: 30px;
-}
-.contact-row .contact-col-left{
-    flex-basis: 25%;
-}
-.contact-row .contact-col-right{
-    flex-basis: 75%;
-}
-  
-     /* ---------- left fixed icon menu area ---------  */
+    /* -------------- responsive contact section -----------  */
+    #contact .contact-row{
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+    }
+    .contact-row .contact-col-left{
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+    }
+    .contact-row .contact-col-right{
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
+    }
+    /* ---------- left fixed icon menu area ---------  */
      #left-icon-menu{
         width:8%;
     }
@@ -505,12 +572,10 @@
         height: 20px;
         font-size: 14px;
     }
-
-        /* --------- author info & language right side----------  */
+    /* --------- author info & language right side----------  */
     #author-right{
         width: 8%;
     }
-
     #author-right p{
         font-size:12px;
     }
@@ -519,7 +584,6 @@
         height: 18px;
         font-size: 10px;
     }
-
     /* ---------- left fixed icon menu area ---------  */
     #left-icon-menu{
         width:8%;
@@ -542,19 +606,21 @@
         height: 18px;
         font-size: 10px;
     }
-/* ---------max: 1024px - break ponint ends --------  */
+    /* ---------max: 1024px - break ponint ends --------  */
   }
   
-  /* Laptops & Desktops */
+  /* ------------ Laptops & Desktops --------------- */
   @media (min-width: 1025px) {
     /* large screen styles here */
 
-    /* -------------- responsive pricing section -----------  */
+    /* -------- responsive pricing section -----  */
     #pricing .pricing-row{
         margin: 0;
     }
     .price-card-container{
+        display:-ms-grid;
         display:grid;
+        -ms-grid-columns: minmax(250px , 1fr ) 15px minmax(250px , 1fr );
         grid-template-columns: repeat(2, minmax(250px , 1fr ));
         grid-gap: 15px;
     }
