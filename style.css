@@ -98,7 +98,6 @@ a,p,h1,h2,h3,h4,h5,h6 {
     padding:5px 0;
 }
 
-
 /* ----------- hero area ---------  */
 .hero-row{
     display:flex;
@@ -171,7 +170,6 @@ a,p,h1,h2,h3,h4,h5,h6 {
     font-weight:500;
     margin-bottom:40px;
 }
-
 .down-btn a{
     text-decoration:none;
     padding:14px 32px;

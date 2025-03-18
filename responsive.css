@@ -108,16 +108,30 @@
         padding:0 9%;
     }
     .section-title{
-        font-size:35px;
+        font-size:34px;
     }
             /* ---------- header section --------  */
     .head-left .logo{
-        width:100px;
+        width:98px;
     }
     .head-left p{
         font-size:14px;
     }
-  
+    .head-right h3 i{
+        font-size:14px;
+        width:24px;
+        height:24px;
+        margin-right:8px;
+    }
+    .head-right h3{
+        font-weight:400;
+        font-size:20px;
+    }
+    .head-right a{
+        font-size:14px;
+        border-radius:50px;
+        width:124px;
+    }
           /* -------------- responsive hero section -----------  */
         .hero-row{
             display:flex;
