@@ -72,6 +72,9 @@ a,p,h1,h2,h3,h4,h5,h6 {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     padding:20px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .head-right {
@@ -294,7 +297,7 @@ a,p,h1,h2,h3,h4,h5,h6 {
     -o-transition:0.3s;
     transition:0.3s;
 }
-#left-icon-menu ul li a.active-menu{
+#left-icon-menu ul li a.active-menu i{
     background: -webkit-gradient(linear, left top, right top, from(#F5BD4D), to(#F89222));
     background: -o-linear-gradient(left, #F5BD4D, #F89222);
     background: linear-gradient(to right, #F5BD4D, #F89222);
@@ -844,7 +847,6 @@ a,p,h1,h2,h3,h4,h5,h6 {
     top: -8px;
 }
 
-
 /* ------------------- pricing section ---------------  */
 #pricing{
     padding:30px 0;
@@ -946,8 +948,6 @@ a,p,h1,h2,h3,h4,h5,h6 {
     color:#fff;
 }
 
-
-
 /* ----------------- contact section --------------  */
 
 #contact{
@@ -1022,4 +1022,10 @@ form input[type=submit]:hover{
     background:-webkit-gradient(linear ,  left top, right top ,  from(rgba(248, 146, 34, 1)), to(rgba(245, 189, 77, 1)));
     background:-o-linear-gradient(left ,  rgba(248, 146, 34, 1), rgba(245, 189, 77, 1));
     background:linear-gradient(to right ,  rgba(248, 146, 34, 1), rgba(245, 189, 77, 1));
+}
+span#success{
+    color:#44bd32;
+    font-size:14px;
+    display:block;
+    margin:-25px 0 0 10px;
 }

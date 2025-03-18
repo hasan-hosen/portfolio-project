@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="themefisher">
-    <meta name="description" content="">
-    <title>Personal Portfolio Website</title>
+    <meta name="description" content="Professional front-end developer Hasan Hosen crafts responsive websites using HTML, CSS, and JavaScript. Explore my portfolio and contact me for your next web project.">
+    <title>themefisher || Front-End Developer Portfolio || Dhaka, Bangladesh</title>
 <!-- ------------------ External CSS Linking ---------------  -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
@@ -34,7 +34,6 @@
 
     </div>
 </header>
-
 <!-- ----------------------- hero area --------------------------  -->
 <div id="hero">
     <div id="container">
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- ---------- hero right side ---------  -->
             <div class="hero-right">
                 <div class="intro">
                     <h4>INTRODUCTION</h4>
@@ -66,15 +65,14 @@
         </div>
     </div>
 </div>
-
         <!-- ----------------- hero left icon menu ------ -----  -->
         <nav id="left-icon-menu">
-            <ul>
-                <li><a href="#header"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#resume"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i></a></li>
-                <li><a href="#blog"><i class="fa-solid fa-file-signature"></i></a></li>
-                <li><a href="#contact"><i class="fa-regular fa-envelope"></i></a></li>
+            <ul id="left-menu">
+                <li><a href="#header" onclick="active()" class="active-menu"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#resume" onclick="active()" ><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#portfolio" onclick="active()"><i class="fa-solid fa-briefcase"></i></a></li>
+                <li><a href="#blog" onclick="active()"><i class="fa-solid fa-file-signature"></i></a></li>
+                <li><a href="#contact" onclick="active()"><i class="fa-regular fa-envelope"></i></a></li>
             </ul>
         </nav>
         <!-- --------------- Fixed right side author info  ---------  -->
@@ -277,7 +275,7 @@
                 <h2 class="section-title">Blog</h2>
                 <div class="blog-cards-container">
                     <div class="blog-column">
-                        <div class="single-blog">
+                        <article class="single-blog">
                             <img src="./images/blog-img-1.jpg" alt="Blog-Featured-Image">
                             <div class="blog-content">
                                 <p class="blog-date">Photography | 28 Apr 2022</p>
@@ -285,8 +283,8 @@
                                 <p class="blog-article">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
                                 <h4 class="post-author">Posted By Daryl Smith</h4>
                             </div>
-                        </div>
-                        <div class="single-blog">
+                        </article>
+                        <article class="single-blog">
                             <img src="./images/blog-img-2.jpg" alt="Blog-Featured-Image">
                             <div class="blog-content">
                                 <p class="blog-date">Photography | 28 Apr 2022</p>
@@ -294,8 +292,8 @@
                                 <p class="blog-article">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
                                 <h4 class="post-author">Posted By Daryl Smith</h4>
                             </div>
-                        </div>
-                        <div class="single-blog">
+                        </article>
+                        <article class="single-blog">
                             <img src="./images/blog-img-3.jpg" alt="Blog-Featured-Image">
                             <div class="blog-content">
                                 <p class="blog-date">Photography | 28 Apr 2022</p>
@@ -303,10 +301,10 @@
                                 <p class="blog-article">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
                                 <h4 class="post-author">Posted By Daryl Smith</h4>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <div class="blog-column">
-                        <div class="single-blog">
+                        <article class="single-blog">
                             <img src="./images/blog-img-4.jpg" alt="Blog-Featured-Image">
                             <div class="blog-content">
                                 <p class="blog-date">Photography | 28 Apr 2022</p>
@@ -314,8 +312,8 @@
                                 <p class="blog-article">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
                                 <h4 class="post-author">Posted By Daryl Smith</h4>
                             </div>
-                        </div>
-                        <div class="single-blog">
+                        </article>
+                        <article class="single-blog">
                             <img src="./images/blog-img-5.jpg" alt="Blog-Featured-Image">
                             <div class="blog-content">
                                 <p class="blog-date">Photography | 28 Apr 2022</p>
@@ -323,8 +321,8 @@
                                 <p class="blog-article">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
                                 <h4 class="post-author">Posted By Daryl Smith</h4>
                             </div>
-                        </div>
-                        <div class="single-blog">
+                        </article>
+                        <article class="single-blog">
                             <img src="./images/blog-img-1.jpg" alt="Blog-Featured-Image">
                             <div class="blog-content">
                                 <p class="blog-date">Photography | 28 Apr 2022</p>
@@ -332,10 +330,9 @@
                                 <p class="blog-article">Lorem Ipsum is simply dummy text the printing typesetting industry. Lorem Ipsum has been...</p>
                                 <h4 class="post-author">Posted By Daryl Smith</h4>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -424,32 +421,35 @@
             <div class="contact-col-left"></div>
             <div class="contact-col-right">
                 <h2 class="section-title">Contact</h2>
-                <form action="">
+                <form action="" name="submit-to-google-sheet">
                     <div id="fname">
                         <label for="fname">First Name*</label>
-                        <input type="text" id="fname" required>
+                        <input type="text" id="fname" name="First Name" required>
                     </div>
                     <div id="lname">
                         <label for="lname">Last Name*</label>
-                        <input type="text" id="lname" required>                        
+                        <input type="text" id="lname" name="Last Name" required>                        
                     </div>
                     <div id="email">
                         <label for="email">Email*</label>
-                        <input type="email" id="email" required>                        
+                        <input type="email" id="email" name="Email" required>                        
                     </div>
                     <div id="phone">
                         <label for="numb">Phone*</label>
-                        <input type="tel" id="numb" required>                        
+                        <input type="tel" id="numb" name="Number" required>                        
                     </div>
                     <div id="message">
                         <label for="message"></label>
-                        <textarea name="message" id="message" rows="6"></textarea>                        
+                        <textarea name="Message" id="message" rows="6"></textarea>                        
                     </div>
                     <input type="submit" value="Send Message">
                 </form>
+                <span id="success"></span>
             </div>
         </div>
     </div>
 </section>
+<!-- ----------------- javascript ------------------  -->
+ <script src="./main.js"></script>
 </body>
 </html>
