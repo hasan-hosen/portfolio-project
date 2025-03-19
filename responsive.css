@@ -1,11 +1,11 @@
 /* ----------------- some default css will be here  --------------  */
-#container{
+.container{
     padding:0 10%;
 }
-/* ------------------ default css ends here  --------------  */
- /* ----------------------- main css starts from here  -------------------  */
+/*                         default css ends here                     */
+ /*                        main css starts from here                 */
 
- /* -------- for mobile only -------  */
+ /*            for mobile only          */
  @media (max-width: 480px) {
     .section-title{
         font-size:30px;
@@ -102,9 +102,9 @@
  }
 
 
-/* For Mobile landscape mode & Tablet screen  */
+/*              For Mobile landscape mode & Tablet screen            */
 @media (max-width: 767px) {
-    #container{
+    .container{
         padding:0 9%;
     }
     .section-title{
@@ -398,9 +398,9 @@
  /* --------- max: 768px - break ponint ends --------  */
  }
 
-  /* Tablet & Medium Screens */
+  /*                   Tablet & Medium Screens              */
   @media (min-width: 768px) and (max-width: 1024px) {
-    #container{
+    .container{
         padding:0 8%;
     }
     .section-title{
