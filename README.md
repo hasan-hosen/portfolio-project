@@ -13,8 +13,8 @@ The website adapts seamlessly to different screen sizes and devices for a smooth
 
 ### ✅ Performance & Optimization
 - **Google PageSpeed Insights Results:**
-  - **Desktop:** Performance 100%, SEO 100%, Speed 95%
-  - **Mobile:** Performance 100%, SEO 100% (Speed slightly lower)
+  - **Desktop:** Performance 95%, SEO 100%,Accessibility 78%, Best Practices 100%
+  - **Mobile:** Performance 75%, SEO 100%, Accessibility 78%, Best Practices 96%
 - Code optimized for efficiency and fast loading times.
 
 ### ✅ Code Quality & Standards
