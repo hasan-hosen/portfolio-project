@@ -6,39 +6,39 @@
     <meta name="author" content="themefisher">
     <meta name="description" content="Professional front-end developer Hasan Hosen crafts responsive websites using HTML, CSS, and JavaScript. Explore my portfolio and contact me for your next web project.">
     <title>themefisher || Front-End Developer Portfolio || Dhaka, Bangladesh</title>
-<!--             External CSS Linking                  -->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./responsive.css">
 <!--             All CDN Link here                 -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--             External CSS Linking                  -->
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
-<!--                     top header area                -->
+<!--          **********           top header area    **********            -->
 <header id="header">
     <div class="container">
-        <div class="header-row">
-            <div class="head-left">
+        <div class="row header-row">
+            <div class="col-sm-3 py-4 head-left">
                 <a href="https://themefisher.hasanhosen.xyz/">
                    <img src="./images/logo.png" alt="Site Logo" class="logo">
                    <p>UI/UX designer</p> 
                 </a>
             </div>
-            <div class="head-right">
+            <div class="col-sm-9 py-4 d-flex justify-content-between align-items-center head-right">
                 <h3><i class="fa-solid fa-house-chimney-window"></i>Home</h3>
                 <a href="#contact">Talk To Me</a>
             </div>
         </div>
-
     </div>
 </header>
-<!--                       hero area                -->
+<!--             **********          hero area      **********          -->
 <div id="hero">
     <div class="container">
-        <div class="hero-row">
-            <div class="hero-left">
+        <div class=" row hero-row">
+            <div class="col-lg-3 hero-left">
                 <div class="profile">
                     <img src="./images/profile-image.png" alt="Portfolio Image">
                     <div class="social-icon">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <!--                hero right side                -->
-            <div class="hero-right">
+            <div class="col-lg-9 hero-right">
                 <div class="intro">
                     <h4>INTRODUCTION</h4>
                     <h2>I'm a Creative Developer & <br>UI/UX Design Expert</h2>
@@ -65,7 +65,7 @@
         </div>
     </div>
 </div>
-        <!--                 hero left icon menu                -->
+        <!--          **********       hero left icon menu           **********     -->
         <nav id="left-icon-menu">
             <ul id="left-menu">
                 <li><a href="#header" onclick="active()" class="active-menu"><i class="fa-solid fa-house"></i></a></li>
@@ -83,14 +83,14 @@
                 <a href="#" class="active-lang">En</a>  
             </div>
         </div>
-<!--                         resume section                     -->
+<!--        ********           resume section       **********        -->
 <section id="resume">
     <div class="container">
-        <div class="resume-row">
-            <div class="resume-col-left">
+        <div class="row resume-row">
+            <div class="col-lg-3 resume-col-left">
                 <!--              left side blank                 -->
             </div>
-            <div class="resume-col-right">
+            <div class="col-lg-9 resume-col-right">
                 <h2 class="section-title">Resume</h2>
                 <div class="education">
                     <h2 class="resume-title"><i class="fa-solid fa-graduation-cap"></i>Education</h2>
@@ -131,32 +131,32 @@
 <!--                           skill section                     -->
 <section id="skill">
     <div class="container">
-        <div class="skill-row">
-            <div class="skill-col-left">
+        <div class="row skill-row">
+            <div class="col-lg-3 skill-col-left">
                 <!--                         skill left blank                         -->
             </div>
             <!--                            skill right side                           -->
-            <div class="skill-col-right">
+            <div class="col-lg-9 skill-col-right">
                 <h2 class="section-title">Skills</h2>
                 <div class="skill-container">
                     <h4>UI/UX Design</h4>
-                    <div class="progress-bar">
+                    <div class="skill-bar">
                         <div class="ui-ux"><span>95%</span></div>
                     </div>
                     <h4>Photography</h4>
-                    <div class="progress-bar">
+                    <div class="skill-bar">
                         <div class="photography"><span>90%</span></div>
                     </div>
                     <h4>Creativity</h4>
-                    <div class="progress-bar">
+                    <div class="skill-bar">
                         <div class="creativity"><span>80%</span></div>
                     </div>
                     <h4>Team Work</h4>
-                    <div class="progress-bar">
+                    <div class="skill-bar">
                         <div class="team-work"><span>95%</span></div>
                     </div>
                     <h4>Web Design</h4>
-                    <div class="progress-bar">
+                    <div class="skill-bar">
                         <div class="web-design"><span>95%</span></div>
                     </div>
                 </div>
@@ -167,12 +167,12 @@
 <!--                                 portfolio section               -->
 <section id="portfolio">
     <div class="container">
-        <div class="portfolio-row">
-            <div class="portfolio-col-left">
+        <div class="row portfolio-row">
+            <div class="col-lg-3 portfolio-col-left">
                 <!--              blank just for making some space on the left side          -->
             </div>
             <!--                      portfolio section right column                -->
-            <div class="portfolio-col-right">
+            <div class="col-lg-9 portfolio-col-right">
                 <h2 class="section-title">Portfolio</h2>
                 <div class="port-menu">
                     <ul>
@@ -268,9 +268,9 @@
 <!--                          blog section                    -->
 <section id="blog">
     <div class="container">
-        <div class="blog-row">
-            <div class="blog-col-left"></div>
-            <div class="blog-col-right">
+        <div class="row blog-row">
+            <div class="col-lg-3 blog-col-left"></div>
+            <div class="col-lg-9 blog-col-right">
                 <h2 class="section-title">Blog</h2>
                 <div class="blog-cards-container">
                     <div class="blog-column">
@@ -339,9 +339,9 @@
 <!--                            pricing section                      -->
 <section id="pricing">
     <div class="container">
-        <div class="pricing-row">
-            <div class="pricing-col-left"></div>
-            <div class="pricing-col-right">
+        <div class="row pricing-row">
+            <div class="col-lg-3 pricing-col-left"></div>
+            <div class="col-lg-9 pricing-col-right">
                 <h2 class="section-title">Pricing</h2>
                 <div class="price-card-container">
                     <div class="pricing-card">
@@ -416,9 +416,9 @@
 <!--                           contact section               -->
 <section id="contact">
     <div class="container">
-        <div class="contact-row">
-            <div class="contact-col-left"></div>
-            <div class="contact-col-right">
+        <div class="row contact-row">
+            <div class="col-lg-3 contact-col-left"></div>
+            <div class="col-lg-9 contact-col-right">
                 <h2 class="section-title">Contact</h2>
                 <form name="submit-to-google-sheet">
                     <div id="fname">
